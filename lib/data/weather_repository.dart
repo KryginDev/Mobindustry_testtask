@@ -24,7 +24,8 @@ class WeatherRepository {
   Future<Weather> getWeatherByCity({@required String name}) async {
     try {
       final result = await _dio.get(
-          '/weather?q=$name&units=metric&appid=fb35c70201f40caa307483b4e01d9a5e');
+          '/weather?q=$name&lang=ru&units=metric&appid=fb35c70201f40caa307483b4e01d9a5e'
+      );
       return Weather.fromJson(result.data);
     } on DioError catch (e) {
       throw e.message;

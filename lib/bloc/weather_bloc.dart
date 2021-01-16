@@ -4,6 +4,8 @@ import 'package:flutter_app_mobindustry/view/main/event/main_screen_event.dart';
 import 'package:flutter_app_mobindustry/view/main/state/main_screen_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../view/main/state/main_screen_states.dart';
+
 class WeatherBloc extends Bloc<MainScreenEvent, MainScreenState> {
   List<Weather> _weatherByCity = [];
 
@@ -21,4 +23,5 @@ class WeatherBloc extends Bloc<MainScreenEvent, MainScreenState> {
       yield MainScreenWithDataState(_weatherByCity);
     }
   }
+
 }

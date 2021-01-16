@@ -6,6 +6,8 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
+
+
   TextEditingController _controller;
   FocusNode _focusNode;
 

@@ -8,6 +8,7 @@ import 'package:flutter_app_mobindustry/view/search_city/search_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class MainScreen extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
